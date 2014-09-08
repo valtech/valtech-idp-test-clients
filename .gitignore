@@ -1,1 +1,4 @@
 .vagrant
+
+# bash-netcat
+bash-netcat/sessions/*.at

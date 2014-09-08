@@ -6,4 +6,6 @@ The Valtech IDP client secret is not commited and will need to be fetched manual
 the examples. If you do not have access to admin interface, send an email to intranet.support@valtech.se.
 
 The available clients are:
+
  * [python-flask](python-flask)
+ * [bash-netcat](bash-netcat)
