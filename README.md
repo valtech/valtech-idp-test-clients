@@ -6,4 +6,4 @@ The Valtech IDP client secret is not commited and will need to be fetched manual
 the examples.
 
 The available clients are:
- * [python-flask](python-flask/README.md)
+ * [python-flask](python-flask)
