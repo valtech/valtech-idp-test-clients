@@ -1,6 +1,0 @@
-GET        /                        controllers.Main.index
-GET        /sign-in                 controllers.Main.signIn
-GET        /sign-in/callback        controllers.Main.signInCallback(code: String)
-GET        /sign-out                controllers.Main.signOut
-
-GET        /css/*file               controllers.Assets.at(path="/public/css", file)
