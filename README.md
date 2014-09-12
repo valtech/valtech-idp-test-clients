@@ -10,3 +10,5 @@ The available clients are:
  * [bash-netcat](bash-netcat)
  * [python-flask](python-flask)
  * [scala-play](scala-play)
+
+For an example on how to integrate with IDP in a mobile/native app, check out the open source project [Valtech Contact Sync Android](https://github.com/valtech/valtech-contactsync-android).
