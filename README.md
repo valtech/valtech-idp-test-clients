@@ -7,6 +7,7 @@ the examples. If you do not have access to admin interface, send an email to int
 The available clients are:
 
  * [bash-netcat](bash-netcat)
+ * [nodejs-express](nodejs-express)
  * [python-flask](python-flask)
  * [scala-play](scala-play)
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <title>Node.js Express Example App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        {% if session.signedIn %}
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/sign-out">Sign out</a></li>
+        </ul>
+        {% endif %}
+        <h3 class="text-muted">Node.js Express Example App</h3>
+      </div>
+
+      {% block content %}{% endblock %}
+
+      <div class="footer">
+        <p>Valtech 2014</p>
+      </div>
+    </div>
+  </body>
+</html>

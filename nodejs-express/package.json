@@ -1,0 +1,23 @@
+{
+  "name": "valtech-idp-testclient-nodejs-express",
+  "version": "1.0.0",
+  "description": "Valtech IDP Test Client in Node.js and Express",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valtech/valtech-idp-test-clients"
+  },
+  "author": "Adam Renberg <tgwizard@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/valtech/valtech-idp-test-clients/issues"
+  },
+  "homepage": "https://github.com/valtech/valtech-idp-test-clients",
+  "dependencies": {
+    "express": "^4.9.1",
+    "express-session": "^1.8.2",
+    "nunjucks": "^1.0.7",
+    "request": "^2.42.0",
+    "uuid": "^1.4.1"
+  }
+}
