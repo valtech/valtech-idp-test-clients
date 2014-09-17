@@ -7,6 +7,7 @@ var nunjucks = require('nunjucks');
 var uuid = require('uuid');
 var request = require('request');
 
+var IDP_URL = 'https://stage-id.valtech.com';
 var CLIENT_ID = 'valtech.idp.testclient.local';
 var CLIENT_SECRET = process.env.CLIENT_SECRET;
 
@@ -46,7 +47,7 @@ app.get('/sign-in', function(req, res) {
     state: req.session.oauthState,
   };
 
-  res.redirect('https://stage-id.valtech.com/oauth2/authorize?' + qs.stringify(authorizeParams));
+  res.redirect(IDP_URL + '/oauth2/authorize?' + qs.stringify(authorizeParams));
 });
 
 app.get('/sign-in/callback', function(req, res, next) {
@@ -76,12 +77,12 @@ app.get('/sign-out', function(req, res) {
   var endSessionParams = {
     client_id: CLIENT_ID,
   };
-  res.redirect('https://stage-id.valtech.com/oidc/end-session?' + qs.stringify(endSessionParams));
+  res.redirect(IDP_URL + '/oidc/end-session?' + qs.stringify(endSessionParams));
 });
 
 function exchangeCodeForToken(code, callback) {
   var tokenOptions = {
-    url: 'https://stage-id.valtech.com/oauth2/token',
+    url: IDP_URL + '/oauth2/token',
     json: true,
     body: {
       grant_type: 'authorization_code',
@@ -101,7 +102,7 @@ function exchangeCodeForToken(code, callback) {
 
 function fetchUserInfo(accessToken, callback) {
   var userInfoOptions = {
-    url: 'https://stage-id.valtech.com/api/users/me',
+    url: IDP_URL + '/api/users/me',
     json: true,
     headers: {
       'Authorization': 'Bearer ' + accessToken
@@ -118,6 +119,6 @@ function fetchUserInfo(accessToken, callback) {
 }
 
 var port = 55066;
-http.createServer(app).listen(55066, function() {
+http.createServer(app).listen(port, function() {
   console.log("Listening on port", port);
 });
