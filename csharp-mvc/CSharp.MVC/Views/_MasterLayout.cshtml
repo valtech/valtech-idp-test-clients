@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>C# MVC Example App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            @if (Session["signed_in"] != null)
+            {
+            <ul class="nav nav-pills pull-right">
+                <li><a href="/sign-out">Sign out</a></li>
+            </ul>
+            }
+            <h3 class="text-muted">C# MVC Example App</h3>
+        </div>
+
+        @RenderBody()
+
+        <div class="footer">
+            <p>Valtech 2014</p>
+        </div>
+    </div>
+</body>
+</html>

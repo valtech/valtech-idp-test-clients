@@ -1,0 +1,9 @@
+﻿@{
+    Layout = "~/Views/_MasterLayout.cshtml";
+}
+
+<div class="jumbotron">
+    <h1>@ViewData["header"]</h1>
+    <p class="lead">@ViewData["text"]</p>
+    @if (Session["signed_in"] == null) {<p><a class="btn btn-lg btn-success" href="/sign-in">Sign in</a></p>}
+</div>
