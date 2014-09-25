@@ -10,5 +10,6 @@ The available clients are:
  * [nodejs-express](nodejs-express)
  * [python-flask](python-flask)
  * [scala-play](scala-play)
+ * [csharp-mvc](csharp-mvc)
 
 For an example on how to integrate with IDP in a mobile/native app, check out the open source project [Valtech Contact Sync Android](https://github.com/valtech/valtech-contactsync-android).
