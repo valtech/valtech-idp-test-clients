@@ -9,6 +9,7 @@ The available clients are:
  * [bash-netcat](bash-netcat)
  * [nodejs-express](nodejs-express)
  * [python-flask](python-flask)
+ * [ruby-sinatra](ruby-sinatra)
  * [scala-play](scala-play)
  * [csharp-mvc](csharp-mvc)
 

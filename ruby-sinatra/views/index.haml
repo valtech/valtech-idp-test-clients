@@ -1,0 +1,24 @@
+!!! 5
+%html{ lang: 'en' }
+  %head
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1'}
+    %link{ rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' }
+    %link{ rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css' }
+    %link{ rel: 'stylesheet', href: '/css/main.css' }
+    %title Ruby Sinatra Example App
+  %body
+    .container
+      .header
+        - if signed_in
+          %ul.nav.nav-pills.pull-right
+            %li
+              %a{ href: '/sign-out'} Sign out
+        %h3.text-muted Ruby Sinatra Example App
+      .jumbotron
+        %h1= header
+        %p.lead= text
+        - if !signed_in
+          %p
+            %a.btn.btn-lg.btn-success{ href: '/sign-in'} Sign in
+      .footer
+        %p Valtech 2014
