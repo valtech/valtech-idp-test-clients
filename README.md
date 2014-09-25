@@ -9,10 +9,11 @@ the examples. If you do not have access to admin interface, send an email to int
 All available clients are:
 
  * [bash-netcat](bash-netcat)
+ * [csharp-mvc](csharp-mvc)
+ * [csharp-nancy](csharp-nancy)
  * [nodejs-express](nodejs-express)
  * [python-flask](python-flask)
  * [ruby-sinatra](ruby-sinatra)
  * [scala-play](scala-play)
- * [csharp-mvc](csharp-mvc)
 
 For an example on how to integrate with IDP in a mobile/native app, check out the open source project [Valtech Contact Sync Android](https://github.com/valtech/valtech-contactsync-android).
