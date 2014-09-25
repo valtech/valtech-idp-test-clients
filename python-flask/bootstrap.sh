@@ -16,6 +16,7 @@ apt-get install -y python-dev # needed for speed ups to Flask
 
 # Install app's python dependencies
 pip install Flask
+pip install PyJWT
 
 # Set working dir to /app on login
 grep "cd /app" .bashrc > /dev/null || echo "cd /app" >> .bashrc
