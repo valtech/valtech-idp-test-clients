@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "fsharp_mvc", "fsharp-mvc\fsharp_mvc.fsproj", "{D63C216A-AE00-480A-9F31-B6FB23C15C23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9979A407-4B5A-497F-98FE-9195373C37D0}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D63C216A-AE00-480A-9F31-B6FB23C15C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D63C216A-AE00-480A-9F31-B6FB23C15C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D63C216A-AE00-480A-9F31-B6FB23C15C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D63C216A-AE00-480A-9F31-B6FB23C15C23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
