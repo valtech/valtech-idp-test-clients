@@ -114,7 +114,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <None Include="packages.config" />
-    <Content Include="readme.txt" />
+    <None Include="README.md" />
     <Compile Include="Controllers.fs" />
   </ItemGroup>
   <ItemGroup>
