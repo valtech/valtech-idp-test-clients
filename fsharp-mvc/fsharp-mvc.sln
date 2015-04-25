@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9979A4
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "fsharp-mvc-unittest", "fsharp-mvc-unittest\fsharp-mvc-unittest.fsproj", "{872104BC-46DC-4B79-9E2F-8CA5C5EB6484}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{D63C216A-AE00-480A-9F31-B6FB23C15C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D63C216A-AE00-480A-9F31-B6FB23C15C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D63C216A-AE00-480A-9F31-B6FB23C15C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{872104BC-46DC-4B79-9E2F-8CA5C5EB6484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{872104BC-46DC-4B79-9E2F-8CA5C5EB6484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{872104BC-46DC-4B79-9E2F-8CA5C5EB6484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{872104BC-46DC-4B79-9E2F-8CA5C5EB6484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
