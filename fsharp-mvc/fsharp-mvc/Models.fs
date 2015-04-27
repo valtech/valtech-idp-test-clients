@@ -3,8 +3,8 @@
 open System.Web
 
 type IUser =
-    abstract member SignedIn:unit->bool
+    abstract member IsSignedIn : bool with get
 
 type User(httpContext: HttpContextBase) =
     interface IUser with
-        member this.SignedIn() = httpContext.Session.Item("signed_in") <> null
+        member this.IsSignedIn = httpContext.Session.Item("signed_in") <> null

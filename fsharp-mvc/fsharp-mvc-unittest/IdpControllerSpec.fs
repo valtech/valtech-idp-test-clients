@@ -13,7 +13,7 @@ open fsharp_mvc.Models
 let ``When signing in: Should redirect to root when already signed in``() =
     let fakeUser =
         Mock<IUser>()
-            .Setup(fun x -> <@ x.SignedIn() @>).Returns(true)
+            .Setup(fun x -> <@ x.IsSignedIn @>).Returns(true)
             .Create()
     let controller = new IdpController(fakeUser)
     let actionResult = controller.SignIn()
@@ -25,7 +25,7 @@ let ``When signing in: Should redirect to IDP when not signed in``() =
     let idp_url = String.Format("https://stage-id.valtech.com/oauth2/authorize?response_type={0}&client_id={1}&scope={2}", "code", CLIENT_ID, "email")
     let fakeUser =
         Mock<IUser>()
-            .Setup(fun x -> <@ x.SignedIn() @>).Returns(false)
+            .Setup(fun x -> <@ x.IsSignedIn @>).Returns(false)
             .Create()
     let controller = new IdpController(fakeUser)
     let actionResult = controller.SignIn()
