@@ -11,8 +11,14 @@ module Controllers =
 
     let GetSignInUrl isSignedIn = 
         if (isSignedIn) then "/" else idp_url
+    let GetSignOutUrl = 
+        String.Format("https://stage-id.valtech.com/oidc/end-session?client_id={0}", CLIENT_ID)
+
 
     type IdpController(user:IUser) =
         inherit Controller()
 
         member this.SignIn() = user.IsSignedIn |> GetSignInUrl |> this.Redirect
+        member this.SignOut() = 
+            user.Session.Clear() 
+            GetSignOutUrl |> this.Redirect
