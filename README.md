@@ -15,5 +15,6 @@ All available clients are:
  * [python-flask](python-flask)
  * [ruby-sinatra](ruby-sinatra)
  * [scala-play](scala-play)
+ * [java-spring-boot](java-spring-boot)
 
 For an example on how to integrate with IDP in a mobile/native app, check out the open source project [Valtech Contact Sync Android](https://github.com/valtech/valtech-contactsync-android).
