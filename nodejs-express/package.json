@@ -14,10 +14,10 @@
   },
   "homepage": "https://github.com/valtech/valtech-idp-test-clients",
   "dependencies": {
-    "express": "^4.9.1",
-    "express-session": "^1.8.2",
-    "nunjucks": "^1.0.7",
-    "request": "^2.42.0",
-    "uuid": "^1.4.1"
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "nunjucks": "^3.2.2",
+    "request": "^2.88.2",
+    "uuid": "^8.3.0"
   }
 }
