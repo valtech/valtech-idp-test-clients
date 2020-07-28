@@ -5,7 +5,7 @@ GEM
       timers (~> 4.0.0)
     daemons (1.1.9)
     eventmachine (1.0.3)
-    ffi (1.9.4)
+    ffi (1.13.1)
     haml (4.0.5)
       tilt
     hitimes (1.2.2)
