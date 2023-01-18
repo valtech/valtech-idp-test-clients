@@ -5,7 +5,7 @@ GEM
       timers (~> 4.0.0)
     daemons (1.1.9)
     eventmachine (1.0.3)
-    ffi (1.9.4)
+    ffi (1.15.5)
     haml (4.0.5)
       tilt
     hitimes (1.2.2)
@@ -15,7 +15,7 @@ GEM
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
-    rack (1.5.2)
+    rack (1.6.13)
     rack-protection (1.5.3)
       rack
     rb-fsevent (0.9.4)
